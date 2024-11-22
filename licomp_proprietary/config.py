@@ -2,7 +2,7 @@
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-licomp_proprietary_version = '0.2.1'
+licomp_proprietary_version = '0.3.0'
 my_supported_api_version = '0.3'
 
 repo = 'https://github.com/hesa/licomp-proprietary/'
