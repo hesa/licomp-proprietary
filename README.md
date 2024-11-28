@@ -8,7 +8,7 @@ Licomp Proprietary provides compatibility data:
 
 ## Introduction 
 
-Licomp toolkit is using the Licomp [Licomp](https://github.com/hesa/licomp) api to communicate with the Licomp resources. For a better understanding of Licomp we suggest you read:
+Licomp toolkit is using the [Licomp](https://github.com/hesa/licomp) api to communicate with the Licomp resources. For a better understanding of Licomp we suggest you read:
 
 * [Licomp basic concepts](https://github.com/hesa/licomp/#licomp-concepts)
 * [Licomp reply format](https://github.com/hesa/licomp/blob/main/docs/reply-format.md)
@@ -24,7 +24,7 @@ Licomp is used be the following compatibility resources:
 
 # Using Licomp Proprietary
 
-Since Licomp Proprietary implements [Licomp](https://github.com/hesa/licomp) we refer to the guides (both cli and python api) for that.
+Since Licomp Proprietary implements [Licomp](https://github.com/hesa/licomp) we refer to the Licomp guides (both cli and python api).
 
 ## Command line interface
 
