@@ -8,7 +8,7 @@ Licomp Proprietary provides compatibility data:
 
 ## Introduction 
 
-Licomp toolkit is using the [Licomp](https://github.com/hesa/licomp) api to communicate with the Licomp resources. For a better understanding of Licomp we suggest you read:
+Licomp proprietary is using the [Licomp](https://github.com/hesa/licomp) api to communicate with the Licomp resources. For a better understanding of Licomp we suggest you read:
 
 * [Licomp basic concepts](https://github.com/hesa/licomp/#licomp-concepts)
 * [Licomp reply format](https://github.com/hesa/licomp/blob/main/docs/reply-format.md)
