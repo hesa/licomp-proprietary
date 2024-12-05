@@ -42,6 +42,7 @@ See [Licomp Python API](https://github.com/hesa/licomp/blob/main/docs/python-api
 
 Licomp Proprietary is available via [pypi.org](https://pypi.org/) at: [https://pypi.org/project/licomp-proprietary/](https://pypi.org/project/licomp-proprietary/).
 
+
 To install, simply do the following:
 
 ```
