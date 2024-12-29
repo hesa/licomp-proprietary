@@ -14,6 +14,8 @@ from licomp_proprietary.config import licomp_proprietary_version
 from licomp_proprietary.config import module_name
 from licomp_proprietary.config import my_supported_api_version
 from licomp_proprietary.config import disclaimer
+from licomp_proprietary.config import original_data_url
+from licomp_proprietary.config import module_url
 
 SCRIPT_DIR = os.path.dirname(__file__)
 DATA_DIR = os.path.join(SCRIPT_DIR, 'data')
@@ -56,6 +58,12 @@ class LicompProprietary(Licomp):
 
     def version(self):
         return licomp_proprietary_version
+
+    def url(self):
+        return module_url
+
+    def data_url(self):
+        return original_data_url
 
     def supported_api_version(self):
         return my_supported_api_version

@@ -3,12 +3,14 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
 
 licomp_proprietary_version = '0.3.1'
-my_supported_api_version = '0.3'
+my_supported_api_version = '0.4'
 
 repo = 'https://github.com/hesa/licomp-proprietary/'
 disclaimer = 'This data comes with not warranty. Using this data is the user\'s responsibility. Contact a lawyer for legal advice.'
 cli_name = 'licomp-proprietary'
 module_name = 'licomp_proprietary'
+module_url = 'https://github.com/hesa/licomp-proprietary'
+original_data_url = 'https://github.com/hesa/licomp-proprietary'
 
 description = """
 
