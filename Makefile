@@ -22,8 +22,14 @@ check_version:
 	@echo -n "Checking api versions: "
 	@MY_VERSION=`grep api_version licomp_proprietary/config.py | cut -d = -f 2 | sed -e "s,[ ']*,,g"` ; LICOMP_VERSION=`grep licomp requirements.txt | cut -d = -f 3 | sed -e "s,[ ']*,,g" -e "s,[ ']*,,g" -e "s,\(^[0-9].[0-9]\)[\.0-9\*]*,\1,g"` ; if [ "$$MY_VERSION" != "$$LICOMP_VERSION" ] ; then echo "FAIL" ; echo "API versions differ \"$$MY_VERSION\" \"$$LICOMP_VERSION\"" ; exit 1 ; else echo OK ; fi
 
-test:
+py-test:
 	PYTHONPATH=. python3 -m pytest --log-cli-level=10 tests/
+
+cli-test:
+	tests/shell/test_cli.sh
+	tests/shell/test_returns.sh
+
+test: py-test cli-test
 
 test-local:
 	PYTHONPATH=.:../licomp python3 -m pytest --log-cli-level=10 tests/

@@ -37,6 +37,7 @@ class LicompProprietary(Licomp):
             "No": CompatibilityStatus.INCOMPATIBLE,
             "Unknown": CompatibilityStatus.UNKNOWN,
             "Check dependency": CompatibilityStatus.DEPENDS,
+            "unsupported": CompatibilityStatus.UNSUPPORTED,
         }
 
     def supported_licenses(self):
@@ -49,9 +50,15 @@ class LicompProprietary(Licomp):
         return self.provisionings
 
     def _outbound_inbound_compatibility(self, outbound, inbound, usecase, provisioning, modified):
-        compat = self.licenses[outbound][inbound]
-        return self.outbound_inbound_reply(self.ret_statuses[compat],
-                                           f'Value from matrix: {compat}')
+        print("oic---------------------------------------------------------------------------------" + str("pp"))
+        try:
+            compat = self.licenses[outbound][inbound]
+            return self.outbound_inbound_reply(self.ret_statuses[compat],
+                                               f'Value from matrix: {compat}')
+        except KeyError:
+            compat = CompatibilityStatus.compat_status_to_string(CompatibilityStatus.UNSUPPORTED)
+            return self.outbound_inbound_reply(self.ret_statuses[compat],
+                                               f'No support for outbound:"{outbound}" using inbound:"{inbound}"')
 
     def name(self):
         return module_name
