@@ -50,14 +50,12 @@ class LicompProprietary(Licomp):
         return self.provisionings
 
     def _outbound_inbound_compatibility(self, outbound, inbound, usecase, provisioning, modified):
-        print("oic---------------------------------------------------------------------------------" + str("pp"))
         try:
             compat = self.licenses[outbound][inbound]
             return self.outbound_inbound_reply(self.ret_statuses[compat],
                                                f'Value from matrix: {compat}')
         except KeyError:
-            compat = CompatibilityStatus.compat_status_to_string(CompatibilityStatus.UNSUPPORTED)
-            return self.outbound_inbound_reply(self.ret_statuses[compat],
+            return self.outbound_inbound_reply(CompatibilityStatus.UNSUPPORTED,
                                                f'No support for outbound:"{outbound}" using inbound:"{inbound}"')
 
     def name(self):
