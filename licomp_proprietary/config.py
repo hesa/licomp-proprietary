@@ -6,7 +6,7 @@ licomp_proprietary_version = '0.5.2'
 my_supported_api_version = '0.5'
 
 repo = 'https://github.com/hesa/licomp-proprietary/'
-disclaimer = 'This data comes with not warranty. Using this data is the user\'s responsibility. Contact a lawyer for legal advice.'
+disclaimer = 'This data comes with no warranty. Using this data is the user\'s responsibility. Contact a lawyer for legal advice.'
 cli_name = 'licomp-proprietary'
 module_name = 'licomp_proprietary'
 module_url = 'https://github.com/hesa/licomp-proprietary'
